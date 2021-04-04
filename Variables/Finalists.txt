@@ -1,0 +1,19 @@
+Id|Name|Series|Category|Mentor|Finished
+17|Steve Brookstein|1|Over 25s|Simon Cowell|1
+105|Shayne Ward|2|16-24s|Louis Walsh|1
+65|Leona Lewis|3|16-24s|Simon Cowell|1
+55|Leon Jackson|4|Boys|Dannii Minogue|1
+20|Alexandra Burke|5|Girls|Cheryl Cole|1
+72|Joe McElderry|6|Boys|Cheryl Cole|1
+23|Matt Cardle|7|Boys|Dannii Minogue|1
+67|Little Mix|8|Groups|Tulisa Contostavlos|1
+11|James Arthur|9|Boys|Nicole Scherzinger|1
+47|G4|1|Groups|Louis Walsh|2
+4|Andy Abraham|2|Over 25s|Sharon Osbourne|2
+87|Ray Quinn|3|16-24s|Simon Cowell|2
+89|Rhydian|4|Boys|Dannii Minogue|2
+56|JLS|5|Groups|Louis Walsh|2
+82|Olly Murs|6|Over 25s|Simon Cowell|2
+43|Rebecca Ferguson|7|Girls|Cheryl Cole|2
+26|Marcus Collins|8|Boys|Gary Barlow|2
+36|Jahmene Douglas|9|Boys|Nicole Scherzinger|2
