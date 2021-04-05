@@ -1,0 +1,11 @@
+MentorId|MentorName
+1|Cheryl Cole
+2|Dannii Minogue
+3|Gary Barlow
+4|Kelly Rowland
+5|Louis Walsh
+6|Nicole Schezinger
+7|Sharon Osbourne
+8|Simon Cowell
+9|Unknown
+10|David Wakefield
