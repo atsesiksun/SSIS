@@ -30,3 +30,9 @@ This package takes finalists information from a text file and load into tblFinal
 1. Created a Data Flow Task that loads the mentors into a cache using OLE DB Data Source and Cache Transform transformation.
 2. Created an Execute SQL Task that delete all data from tblFinalist table in SQL
 3. Created a Data Flow Task that contains  a Flat file Data Source that extract finalists data from a text file and load to Lookup transformation. The Lookup transformation look up the name of the mentor in the finalist file against the mentor names in tblMentor table in SQL Server. For Lookup Match output, use expression task to record fact imported ok in Notes column. For Lookup No match output, use expression task to set Mentor Id to 9 (Not Known)  and record problem in Notes column. Use Union All to combine both output and load into  tblFinalist table in SQL server.
+
+## For Loop Containers
+
+This package contain a loop that counts from 1 to 10.
+
+1. Created a variable i to hold the counter. Set InitExpression @i = 1, EvalExpression @i < 10, AssignExpression @i + 1 in For Loop Containers.
