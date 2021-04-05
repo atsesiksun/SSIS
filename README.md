@@ -36,3 +36,14 @@ This package takes finalists information from a text file and load into tblFinal
 This package contain a loop that counts from 1 to 10.
 
 1. Created a variable i to hold the counter. Set InitExpression @i=1, EvalExpression @i<10, AssignExpression @i+1 in For Loop Container.
+
+## Script Tasks
+
+This package displays a message box that ask if you want to get information from Mentors and Finalists text files or from tblMentors and tblFinalists table in SQL Server. Depending on your choice, a message box will be displayed showing the total number of finalists and mentors either from the text file or SQL Server.
+
+1. Used Script Task to display a message box that has a prompt saying "Use Text?". If chosen yes, return success from the procedure. If chosen no, return failure from the procedure.
+2. Created 2 Sequence containers. One to import data from text - read mentors & finalists information from text file, count the number of mentors & finalist and store the numbers in NumberFinalists & NumberMentors variables. Another to import data from SQL - read mentors & finalists information from tblMentors & tblFinalists table in SQL Server, count the number of mentors & finalist and store the numbers in NumberFinalists & NumberMentors variables.
+3. Set import data from text sequence container as success and import data from SQL Server sequence container as Failure
+4. Used Script Task to calculate the total number of mentors and finalists and store result in a created variable NumberTotal
+5. Used Script Task that takes in variable NumberTotal as ReadOnlyVariables and show the total number of mentors and finalists in a message box.
+6. Changed multiple constraints to Logical OR in precedence constraint editor.
