@@ -35,4 +35,4 @@ This package takes finalists information from a text file and load into tblFinal
 
 This package contain a loop that counts from 1 to 10.
 
-1. Created a variable i to hold the counter. Set InitExpression @i = 1, EvalExpression @i < 10, AssignExpression @i + 1 in For Loop Containers.
+1. Created a variable i to hold the counter. Set InitExpression @i=1, EvalExpression @i<10, AssignExpression @i+1 in For Loop Containers.
