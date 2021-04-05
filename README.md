@@ -1,6 +1,6 @@
 # SSIS Exercises
 
-## Variables Exercise
+## Variables
 
 This package counts the number of finalists in a text file and displays a message box showing the results.
 
@@ -8,7 +8,7 @@ This package counts the number of finalists in a text file and displays a messag
 2. Created a variable RowNumber to store the number of finalists in the text file.
 3. Created a Script Task that takes in the RowNumber variable as ReadOnlyVariables and show the number of finalists in a message box.
 
-## Expressions Exercise
+## Expressions
 
  This package counts the number of days till New Year's Eve 31st December and displays a message box showing the results and whether today is weekend/weekday.
  
