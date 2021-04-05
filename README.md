@@ -22,3 +22,11 @@ This package takes finalists information from a text file, remove all records th
 
 1. Created an Execute SQL Task that delete all data from tblFinalist1 table in SQL
 2. Created a Data Flow Task that contains a Flat file Data Source, a Conditional Split transformation, Derived Column transformation, Union all transformation and an OLE DB Destination. The Flat File Data Source extracts the finalists data from a text file and put into the conditional split transformation, which direct rows containing Chery Cole to Cheryl Cole output, rows containing Tulisa to Tulisa output and the rest of the rows to Default output. Used Derived Column transformation to change Cheryl Cole to Cheryl Wakerfield in Cheryl Cole Output. Used Union All transformation to union Cheryl Cole output with Default output and used OLEDB Destination to put result in tblFinalist1 table in SQL Server.
+
+## Lookup Transforms
+
+This package takes finalists information from a text file and load into tblFinalist table in SQL server with 2 additional columns displaying the Mentor Id and Notes. If the mentor name in the text file is in the tblMentor table in SQL Server, then the Mentor Id displayed is the Mentor Id for that specific mentor in tblMentor table and Notes displayed is "Imported Ok". Otherwise, Mentor Id desplayed is 9 and Notes displayed is the "specific mentor's name not known"
+
+1. Created a Data Flow Task that loads the mentors into a cache using OLE DB Data Source and Cache Transform transformation.
+2. Created an Execute SQL Task that delete all data from tblFinalist table in SQL
+3. Created a Data Flow Task that contains  a Flat file Data Source that extract finalists data from a text file and load to Lookup transformation. The Lookup transformation look up the name of the mentor in the finalist file against the mentor names in tblMentor table in SQL Server. For Lookup Match output, use expression task to record fact imported ok in Notes column. For Lookup No match output, use expression task to set Mentor Id to 9 (Not Known)  and record problem in Notes column. Use Union All to combine both output and load into  tblFinalist table in SQL server.
