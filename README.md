@@ -2,10 +2,10 @@
 
 ## Variables
 
-This package reads Finalists information from a text file, counts number of records in the file and displays a message box showing the results.
+This package reads Finalists information from a text file, counts number of records and displays a message box showing the results.
 
 1. Created a Data Flow Task to count the number of records in Finalists text file. The Data Flow Task contains a Flat File Data Source and a Row Count transformation. The Flat File Data Source extracts the Finalists information from a text file and put into the Row Count transformation
-2. Created a variable RowNumber to store the number of records in the text file
+2. Created a variable RowNumber to store the number of records in the Finalists text file
 3. Created a Script Task (using C#) that takes in the RowNumber variable as ReadOnlyVariables and show the results in a message box
 
 ## Expressions
