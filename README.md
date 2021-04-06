@@ -25,7 +25,7 @@ This package takes Finalists information from a text file, removes all records t
 
 ## Lookup Transforms
 
-This package takes Finalists information from a text file and loads into tblFinalist table in SQL server with 2 additional columns displaying Mentor Id and Notes. If the Mentor Name in the text file is in the tblMentor table in SQL Server, then tblFinalist table will display the corresponding Mentor Id from tblMentor table and Notes "Imported Ok". Otherwise, tblFinalist table will display Mentor Id 9 and Notes "Specific Mentor not known".
+This package takes Finalists information from a text file and loads into tblFinalist table in SQL server with 2 additional columns displaying Mentor Id and Notes. If the Mentor Name in the text file is in the tblMentor table in SQL Server, then tblFinalist table will display the corresponding Mentor Id from tblMentor table and Notes "Imported Ok". Otherwise, tblFinalist table will display Mentor Id 9 (Not Known) and Notes "Specific Mentor not known".
 
 1. Created a Data Flow Task that loads the Mentors into a cache using OLE DB Data Source and Cache Transform transformation
 2. Created an Execute SQL Task that delete all data from tblFinalist table in SQL Server
