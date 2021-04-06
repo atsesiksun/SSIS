@@ -25,11 +25,11 @@ This package takes Finalists information from a text file, removes all records t
 
 ## Lookup Transforms
 
-This package takes Finalists information from a text file and loads into tblFinalist table in SQL server with 2 additional columns displaying the Mentor Id and Notes. If the Mentor name in the text file is in the tblMentor table in SQL Server, then the Mentor Id for that specific Mentor in tblMentor table and Notes displays "Imported Ok". Otherwise, Mentor Id desplayed is 9 and Notes displayed is the "specific Mentor's name not known".
+This package takes Finalists information from a text file and loads into tblFinalist table in SQL server with 2 additional columns displaying Mentor Id and Notes. If the Mentor Name in the text file is in the tblMentor table in SQL Server, then tblFinalist table will display the corresponding Mentor Id from tblMentor table and Notes "Imported Ok". Otherwise, tblFinalist table will display Mentor Id 9 and Notes "Specific Mentor not known".
 
 1. Created a Data Flow Task that loads the Mentors into a cache using OLE DB Data Source and Cache Transform transformation
 2. Created an Execute SQL Task that delete all data from tblFinalist table in SQL Server
-3. Created a Data Flow Task that contains a Flat file Data Source that extract Finalists information from a text file and load to Lookup transformation. The Lookup transformation look up the Mentor names in the Finalist file against the Mentor names in tblMentor table in SQL Server. For Lookup Match output, used Expression Task to set Mentor Id column and Notes column to "Imported Ok". For Lookup No match output, used Expression Task to set Mentor Id column to 9 (Not Known) and Notes column to "Specific Mentor not found". Use Union All to combine both output and load into tblFinalist table in SQL server
+3. Created a Data Flow Task that contains a Flat file Data Source that extract Finalists information from a text file and load to Lookup transformation. The Lookup transformation look up for corresponding Mentor names in tblMentor table in SQL Server. For Lookup Match output, used Expression Task to set Mentor Id column to corresponding Mentor Id in tblMentor table and Notes column to "Imported Ok". For Lookup No match output, used Expression Task to set Mentor Id column to 9 (Not Known) and Notes column to "Specific Mentor not known". Use Union All to combine both output and load into tblFinalist table in SQL server
 
 ## For Loop Containers
 
