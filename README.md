@@ -2,7 +2,7 @@
 
 ## Variables
 
-This package reads Finalists information from a text file, counts the number of unique records in the Finalists column and displays a message box showing the results.
+This package reads Finalists information from a text file, counts the number of unique records and displays a message box showing the results.
 
 1. Created a Data Flow Task to count the number of Finalists. The Data Flow Task contains a Flat File Data Source and a Row Count transformation. The Flat File Data Source extracts the Finalists information from a text file and put into the Row Count transformation. 
 2. Created a variable RowNumber to store the number of Finalists in the text file.
